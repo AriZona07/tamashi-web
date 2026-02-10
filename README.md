@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tamashi Web
 
-## Getting Started
+Este es el sitio web oficial para la aplicación Tamashi, construido con [Next.js](https://nextjs.org), [Tailwind CSS](https://tailwindcss.com/), y TypeScript.
 
-First, run the development server:
+## Descripción
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+El propósito de este sitio es servir como una página de aterrizaje (landing page) para la aplicación móvil "Tamashi". Proporciona una bienvenida a los usuarios, un enlace para descargar la aplicación desde la Play Store, y acceso a documentos importantes como el Aviso de Privacidad.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Despliegue
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Este proyecto está configurado para desplegarse automáticamente en **GitHub Pages** cada vez que se realiza un push a la rama `main`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+El flujo de trabajo se encuentra en `.github/workflows/deploy.yml`.
 
-## Learn More
+### Configuración de GitHub Pages
 
-To learn more about Next.js, take a look at the following resources:
+Para que el despliegue funcione correctamente, asegúrate de configurar tu repositorio de GitHub de la siguiente manera:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1.  Ve a **Settings** > **Pages**.
+2.  En la sección **Build and deployment**, selecciona **Source** como **GitHub Actions**.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Desarrollo Local
 
-## Deploy on Vercel
+Para ejecutar el proyecto en tu máquina local:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1.  **Clona el repositorio:**
+    ```bash
+    git clone https://github.com/tu-usuario/tamashi-web.git
+    cd tamashi-web
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2.  **Instala las dependencias:**
+    ```bash
+    npm install
+    ```
+
+3.  **Ejecuta el servidor de desarrollo:**
+    ```bash
+    npm run dev
+    ```
+
+Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver el resultado.
+
+## Scripts Disponibles
+
+-   `npm run dev`: Inicia el servidor de desarrollo.
+-   `npm run build`: Compila la aplicación para producción. El output se genera en la carpeta `out/` para exportación estática.
+-   `npm run start`: Inicia un servidor de producción (no aplicable para exportación estática).
+-   `npm run lint`: Ejecuta el linter para revisar el código.

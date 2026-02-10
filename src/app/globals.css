@@ -1,26 +1,62 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Paleta Clara Morada */
+  --background: #faf5ff; /* purple-50 */
+  --foreground: #3b0764; /* purple-950 */
+
+  --primary: #9333ea; /* purple-600 */
+  --primary-foreground: #ffffff;
+
+  --card: #ffffff;
+  --card-foreground: #3b0764;
+
+  --muted: #f3e8ff; /* purple-100 */
+  --muted-foreground: #6b21a8; /* purple-800 */
+
+  --border: #e9d5ff; /* purple-200 */
+
+  /* Definiciones por defecto para evitar errores de validación en IDE */
+  --font-geist-sans: sans-serif;
+  --font-geist-mono: monospace;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Paleta Oscura Morada */
+    --background: #1e1b4b; /* indigo-950/purple-dark mix */
+    --foreground: #faf5ff;
+
+    --primary: #a855f7; /* purple-500 */
+    --primary-foreground: #ffffff;
+
+    --card: #2e1065; /* purple-950 */
+    --card-foreground: #faf5ff;
+
+    --muted: #4c1d95; /* purple-900 */
+    --muted-foreground: #d8b4fe; /* purple-300 */
+
+    --border: #581c87; /* purple-900 */
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
