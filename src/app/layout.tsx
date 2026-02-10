@@ -16,7 +16,13 @@ export const metadata: Metadata = {
   title: "Tamashi",
   description: "Tamashi App - Conecta y descubre",
   icons: {
-    icon: '/favicon.png',
+    icon: [
+      { url: '/favicon.png' },
+      { url: '/favicon.png', sizes: '512x512', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/favicon.png' },
+    ],
   },
 };
 
