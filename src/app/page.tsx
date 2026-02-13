@@ -26,7 +26,7 @@ export default function Home() {
           </a>
           
           <a
-            href="https://play.google.com/apps/internaltest/4701039988783695630"
+            href="https://play.google.com/apps/testing/com.oolestudio.tamashi"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-primary bg-transparent px-6 py-3 text-primary transition-colors hover:bg-primary/10"
