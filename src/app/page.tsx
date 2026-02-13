@@ -35,8 +35,10 @@ export default function Home() {
           </a>
 
           <a
-            href="/TamashiApp.apk"
-            download
+            href="./TamashiApp.apk"
+            download="TamashiApp.apk"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border border-muted-foreground/30 bg-card px-6 py-3 text-foreground transition-colors hover:bg-muted/50"
           >
             <svg viewBox="0 0 24 24" fill="currentColor" className="h-6 w-6">
