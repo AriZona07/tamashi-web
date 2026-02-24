@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Tamashi",
   description: "Tamashi App - Conecta y descubre",
+  verification: {
+    google: "ImjM00vSmOURPAZGHX8RRKin20eDB2XiJ-idEZfjFlM",
+  },
   icons: {
     icon: [
       { url: '/favicon.png' },
