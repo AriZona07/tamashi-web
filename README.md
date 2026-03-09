@@ -4,7 +4,7 @@ Este es el sitio web oficial para la aplicación Tamashi, construido con [Next.j
 
 ## Descripción
 
-El propósito de este sitio es servir como una página de aterrizaje (landing page) para la aplicación móvil "Tamashi". Proporciona una bienvenida a los usuarios, un enlace para descargar la aplicación desde la Play Store, y acceso a documentos importantes como el Aviso de Privacidad.
+El propósito de este sitio es servir como una página de aterrizaje (landing page) para la aplicación móvil "Tamashi". Proporciona un enlace para descargar la aplicación desde la Play Store, y acceso a documentos importantes como el Aviso de Privacidad.
 
 ## Despliegue
 
